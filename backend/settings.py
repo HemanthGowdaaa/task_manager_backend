@@ -77,20 +77,30 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': "taskmanager",
+#         'USER': 'root',
+#         'PASSWORD': "Hkm9900871928@",
+#         'HOST': "localhost",
+#         'PORT': '3306',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "taskmanager",
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': "Hkm9900871928@",
-        'HOST': "localhost",
-        'PORT': '3306',
+        'PASSWORD': 'tKysIWItgTyAkwdKrunvJIYZHUJQQyaC',
+        'HOST': 'hopper.proxy.rlwy.net',
+        'PORT': '24394',
     }
 }
 
-
-
-
+#mysql://root:tKysIWItgTyAkwdKrunvJIYZHUJQQyaC@hopper.proxy.rlwy.net:24394/railway
 
 
 # Password validation

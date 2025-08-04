@@ -65,16 +65,33 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 # MySQL database (credentials from Railway or other external service)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.environ.get('MYSQLDATABASE', 'taskmanager'),
+#         'USER': os.environ.get('MYSQLUSER', 'root'),
+#         'PASSWORD': os.environ.get('MYSQLPASSWORD', 'MaCXNkBZZzfUgKZalFsEkkawLzjEXooB'),
+#         'HOST': os.environ.get('MYSQLHOST', 'taskmanagermysql-production.up.railway.app'),
+#         'PORT': os.environ.get('MYSQLPORT', '3306'),
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQLDATABASE', 'taskmanager'),
-        'USER': os.environ.get('MYSQLUSER', 'root'),
-        'PASSWORD': os.environ.get('MYSQLPASSWORD', 'FpmNUYdRFLQOvUfDpJicAMsIKcgbKyLD'),
-        'HOST': os.environ.get('MYSQLHOST', 'localhost'),
-        'PORT': os.environ.get('MYSQLPORT', '3306'),
+        'NAME': "taskmanager",
+        'USER': 'root',
+        'PASSWORD': "Hkm9900871928@",
+        'HOST': "localhost",
+        'PORT': '3306',
     }
 }
+
+
+
+
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
